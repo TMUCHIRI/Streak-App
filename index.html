@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Streak App</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="top">
+                <div class="plusBtn">
+                    <p>Add The Date and Habit You started Doing</p>
+                    <input type="text" name="habit" id="habit" placeholder="Input A Habit">
+                    <input type="date" name="date" id="date">
+                    <button type="submit" onclick="addHabit()"><ion-icon name="add-circle-outline" style="color: white; height: 100%; width: 100%;"></ion-icon></button>
+                    
+                </div>
+                    <div class="pic">
+                        <img src="https://cdn.dribbble.com/users/8827070/screenshots/16259441/media/54da29dd69262b3b37655fa306d56327.png" alt="">
+                    </div>
+
+                    <div class="welcome">
+                        <p>Welcome to my Streak Counter</p>
+                    </div>
+                 </div>
+
+            <div class="bottom">
+                <div class="streaks" id="streaks">
+                    <!-- <h3>MY STREAKS</h3> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/dist/main.js"></script>
+</body>
+</html>
