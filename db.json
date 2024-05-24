@@ -1,34 +1,3 @@
 {
-  "habits": [
-    {
-      "id": "de5b",
-      "name": "Tree planting",
-      "startDate": "2024-05-24"
-    },
-    {
-      "id": "6a8d",
-      "name": "Bicycle riding",
-      "startDate": "2024-05-01"
-    },
-    {
-      "id": "57f8",
-      "name": "Reduce screen time",
-      "startDate": "2024-05-22"
-    },
-    {
-      "id": "db8d",
-      "name": "Daily standups",
-      "startDate": "2024-05-06"
-    },
-    {
-      "id": "a030",
-      "name": "Coding exercises",
-      "startDate": "2024-05-24"
-    },
-    {
-      "id": "1ab9",
-      "name": "Presenting my project",
-      "startDate": "2024-05-24"
-    }
-  ]
+  "habits": []
 }
