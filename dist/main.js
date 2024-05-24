@@ -16,8 +16,8 @@ function fetchHabits() {
             throw new Error('Network response was not ok');
         }
         const data = yield response.json();
-        console.log('Fetched habits:', data); // Should be an array directly
-        return data; // Directly return the array
+        console.log('Fetched habits:', data); // produce an array directly
+        return data;
     });
 }
 function saveHabit(habit) {
@@ -49,9 +49,10 @@ function displayHabits(habits) {
         habitDiv.className = 'habit';
         const streak = calculateStreak(habit.startDate);
         habitDiv.innerHTML = `
+            <p><ion-icon name="calendar-outline" style="color:white;"></ion-icon></P
             <p>Habit: ${habit.name}</p>
             <p>Started on: ${habit.startDate}</p>
-            <p>Current Streak: ${streak} day(s)</p>
+            <p>Current Streak: ${streak} days</p>
         `;
         streaksContainer.appendChild(habitDiv);
     });

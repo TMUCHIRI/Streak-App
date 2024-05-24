@@ -12,8 +12,8 @@ async function fetchHabits(): Promise<Habit[]> {
         throw new Error('Network response was not ok');
     }
     const data = await response.json();
-    console.log('Fetched habits:', data); // Should be an array directly
-    return data; // Directly return the array
+    console.log('Fetched habits:', data); // produce an array directly
+    return data; 
 }
 
 async function saveHabit(habit: Habit): Promise<void> {
@@ -46,9 +46,10 @@ function displayHabits(habits: Habit[]): void {
         habitDiv.className = 'habit';
         const streak = calculateStreak(habit.startDate);
         habitDiv.innerHTML = `
+            <p><ion-icon name="calendar-outline" style="color:white;"></ion-icon></P
             <p>Habit: ${habit.name}</p>
             <p>Started on: ${habit.startDate}</p>
-            <p>Current Streak: ${streak} day(s)</p>
+            <p>Current Streak: ${streak} days</p>
         `;
         streaksContainer.appendChild(habitDiv);
     });
